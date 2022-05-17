@@ -8,6 +8,7 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install": "cd backend && npm i && cd ../frontend && npm i",
     "build": "cd frontend && npm run build"
   },
   "author": "Stephen Moore",
