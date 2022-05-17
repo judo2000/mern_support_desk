@@ -34,7 +34,7 @@ export const noteSlice = createSlice({
   reducers: {
     reset: (state) => initialState,
   },
-  extraRecuders: (builder) => {
+  extraReducers: (builder) => {
     builder
       .addCase(getNotes.pending, (state) => {
         state.isLoading = true;
